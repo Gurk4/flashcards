@@ -21,7 +21,6 @@ app.use(function(req, res, next){
 })
 
 app.use(function(err, req, res, next){
-    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
     res.locals.error = err;
     res.status(err.status);
     res.render('error');
